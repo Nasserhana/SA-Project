@@ -1,0 +1,131 @@
+/* Cart Page Styles */
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.cart-container h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cart-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.cart-items {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-details h3 {
+    margin-bottom: 8px;
+}
+
+.item-price {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--light-gray);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.remove-item {
+    color: var(--accent-color);
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 0.9em;
+}
+
+.cart-summary {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.cart-summary h3 {
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.summary-item.total {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .cart-content {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .item-image {
+        margin: 0 auto;
+    }
+}

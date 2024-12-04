@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html" class="cart-link active">
+                Cart <span class="cart-count">0</span>
+            </a>
+            <a href="index.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <main class="cart-container">
+        <h1>Shopping Cart</h1>
+        <div class="cart-content">
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be loaded dynamically -->
+            </div>
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Shipping:</span>
+                    <span id="shipping">$0.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="window.location.href='payment.html'">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ShopEase is your one-stop destination for all your shopping needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@shopease.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShopEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

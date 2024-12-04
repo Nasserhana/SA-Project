@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html" class="cart-link">
+                Cart <span class="cart-count">0</span>
+            </a>
+            <a href="index.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <main class="products-container">
+        <aside class="filters">
+            <h3>Filters</h3>
+            <div class="filter-section">
+                <h4>Categories</h4>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="electronics"> Electronics</label>
+                    <label><input type="checkbox" value="fashion"> Fashion</label>
+                    <label><input type="checkbox" value="home"> Home & Living</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h4>Price Range</h4>
+                <input type="range" min="0" max="1000" value="500" id="price-range">
+                <div class="price-inputs">
+                    <input type="number" id="min-price" placeholder="Min">
+                    <input type="number" id="max-price" placeholder="Max">
+                </div>
+            </div>
+        </aside>
+
+        <section class="products-grid" id="products-grid">
+            <!-- Products will be loaded dynamically -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ShopEase is your one-stop destination for all your shopping needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@shopease.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShopEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
